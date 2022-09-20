@@ -69,6 +69,7 @@
     overflow: hidden;
     position: relative;
     height: 503px;
+    width: 100%;
 }
 .slowFade .slide img {
     width: 100%;
@@ -236,6 +237,35 @@ footer {
         position: static;
         top: 0px;
         margin-bottom: 15%;
+    }
+    .header h1
+    {
+        font-size: 24px;
+    }
+    .header h2
+    {
+        font-size: 14px;
+    }
+    .header img
+    {
+        height: 80px;
+    }
+    .slowFade
+    {
+        height: 384px;
+    }
+    .motto h1
+    {
+        font-size: 39px;
+    }
+    .motto h2
+    {
+        font-size: 18px;
+    }
+    .header
+    {
+        margin-top: 18px;
+        height: 80px;
     }
 }
 
