@@ -76,6 +76,7 @@
     height: 100%;
     filter: brightness(40%);
     position: absolute;
+    object-fit: cover;
     /* min-width: 100%; */
     /* min-height: 100%; */
     background: #000;
