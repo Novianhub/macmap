@@ -334,6 +334,11 @@ footer {
         margin-top: 12px;
         height: 62px;
     }
+    .mottodiv
+    {
+        margin-left: 12%;
+        margin-top: 26%;
+    }
 }
 
 /* @media (min-width: 950px)
