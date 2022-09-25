@@ -9,17 +9,35 @@
 
     <title>DEPARTMENTS</title>
     <link rel="stylesheet" href="../ASSETS/CSS/main style.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/menu.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="../OFFICE/office.html">Office</a>
+        <a href="../LABS/labs.html">Labs</a>
+        <a href="../R&D/R&D.html">Research & Developement</a>
+        <a href="../LIBRARY/library.html">Library</a>
+        <a href="../AUDITORIUMS/auditorium.html">Auditorium</a>
+        <a href="../CAMPUS BANK/campusbank.html">Campus Bank</a>
+        <a href="../CANTEEN/canteen.html">Canteen</a>
+        <a href="../WASHROOM/washroom.html">Rest Room</a>
+        <a href="../PARKING/parking.html">Parking</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+
     <div class="header">
         <h1>DEPARTMENTS</h1>
         <h1></h1>
 
-        <p1>Delivering excellence.</p1>
+        <p1>Explore Braches.</p1>
     </div>
     <div class="row1-container">
         <div class="box cyan">
@@ -119,6 +137,19 @@
     <footer>
         <p>&copy; Mar Augusthinose College Rampuram, Developed by IEDC MAC</p>
     </footer>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 </body>
 </body>
+
 </html>

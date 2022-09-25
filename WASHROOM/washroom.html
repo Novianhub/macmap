@@ -10,12 +10,30 @@
     <title>RESTROOM</title>
     <link rel="stylesheet" href="../ASSETS/CSS/main style.css">
     <link rel="stylesheet" href="../ASSETS/CSS/popup.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/menu.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="../OFFICE/office.html">Office</a>
+        <a href="../DEPARTMENTS/departments.html">Departments</a>
+        <a href="../LABS/labs.html">Labs</a>
+        <a href="../R&D/R&D.html">Research & Developement</a>
+        <a href="../LIBRARY/library.html">Library</a>
+        <a href="../AUDITORIUMS/auditorium.html">Auditorium</a>
+        <a href="../CAMPUS BANK/campusbank.html">Campus Bank</a>
+        <a href="../CANTEEN/canteen.html">Canteen</a>
+        <a href="../PARKING/parking.html">Parking</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+
     <div class="header">
         <h1>RESTROOM</h1>
         <h1></h1>
@@ -25,10 +43,11 @@
     <div class="row1-container">
         <div class="box blue">
             <a href="#popup1">
-            <h2>MENS</h2>
-            <!-- <p> BLOCK</p> -->
-            <!-- <P>ROOM NO: </P> -->
-            <img src="https://t4.ftcdn.net/jpg/01/09/46/77/240_F_109467728_Dj94d6n90O4ibV1yR8x9a7vLe2drkfan.jpg" alt="">
+                <h2>MENS</h2>
+                <!-- <p> BLOCK</p> -->
+                <!-- <P>ROOM NO: </P> -->
+                <img src="https://t4.ftcdn.net/jpg/01/09/46/77/240_F_109467728_Dj94d6n90O4ibV1yR8x9a7vLe2drkfan.jpg"
+                    alt="">
             </a>
         </div>
 
@@ -60,20 +79,32 @@
     <div id="popup2" class="overlay">
         <div class="popup">
             <h2>WOMENS</h2>
-                <!-- <a class="close" href="#">&times;</a> -->
-                <div class="content">
-                    <p>Block: prekshitha Sangamam Block</p>
-                    <p>Floor: Ground Floor</p>
-                    <p>Location: Behind Main Auditorium</p>
-                    <!-- <p>campus store</p>
+            <!-- <a class="close" href="#">&times;</a> -->
+            <div class="content">
+                <p>Block: prekshitha Sangamam Block</p>
+                <p>Floor: Ground Floor</p>
+                <p>Location: Behind Main Auditorium</p>
+                <!-- <p>campus store</p>
                 <p>opposite side of campusbank</p> -->
-                </div>
+            </div>
         </div>
     </div>
 
     <footer>
         <p>&copy; Mar Augusthinose College Rampuram, Developed by IEDC MAC</p>
     </footer>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

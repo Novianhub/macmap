@@ -10,17 +10,35 @@
     <title>COMMERCE</title>
     <link rel="stylesheet" href="../../ASSETS/CSS/main style.css">
     <link rel="stylesheet" href="../../ASSETS/CSS/popup.css">
+    <link rel="stylesheet" href="../../ASSETS/CSS/menu.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../ELECTRONICS/electronics.html">Electronics</a>
+        <a href="../BIOTECHNOLOGY/biotechnology.html">Bio-Technology</a>
+        <a href="../MANAGEMENT STUDIES/management studies.html">Management Studies</a>
+        <a href="../COMPUTER SCIENCE/computerscience.html">Computer Science</a>
+        <a href="../ENGLISH/english.html">English</a>
+        <a href="../SOCIAL WORKS/socialwork.html">Social Work</a>
+        <a href="../MATHEMATICS/mathematics.html">Mathematics</a>
+        <a href="../HINDI AND MALAYALAM/hindiandmalayalam.html">Hindi & Malayalam</a>
+        <a href="../PHYSICAL EDUCATION/physicaleducation.html">Physical Education</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
     <div class="header">
         <h1>COMMERCE</h1>
         <!-- <h1></h1> -->
 
-        <p1>Always deliver more than expected</p1>
+        <!-- <p1>Always deliver more than expected</p1> -->
     </div>
     <div class="row1-container">
         <div class="box red">
@@ -48,6 +66,18 @@
     <footer>
         <p>&copy; Mar Augusthinose College Rampuram, Developed by IEDC MAC</p>
     </footer>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

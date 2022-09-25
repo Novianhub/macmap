@@ -10,12 +10,31 @@
     <title>OFFICE</title>
     <link rel="stylesheet" href="../ASSETS/CSS/main style.css">
     <link rel="stylesheet" href="../ASSETS/CSS/popup.css">
+    <link rel="stylesheet" href="../ASSETS/CSS/menu.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="../DEPARTMENTS/departments.html">Departments</a>
+        <a href="../LABS/labs.html">Labs</a>
+        <a href="../R&D/R&D.html">Research & Developement</a>
+        <a href="../LIBRARY/library.html">Library</a>
+        <a href="../AUDITORIUMS/auditorium.html">Auditorium</a>
+        <a href="../CAMPUS BANK/campusbank.html">Campus Bank</a>
+        <a href="../CANTEEN/canteen.html">Canteen</a>
+        <a href="../WASHROOM/washroom.html">Rest Room</a>
+        <a href="../PARKING/parking.html">Parking</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+
+
     <div class="header">
         <h1>OFFICE</h1>
         <!-- <h2>Office</h2> -->
@@ -84,7 +103,7 @@
                 <p>Room No: A6</p>
                 <p>Block: Augusthinose Block</p>
                 <p>Floor: Ground Floor</p>
-                
+
                 <!-- <img src="../ASSETS/IMAGES/princi.png" alt="Princi Image" style="height: 200px;width:200px;float:right;"> -->
             </div>
         </div>
@@ -99,7 +118,7 @@
                 <p>Room No: A1</p>
                 <p>Block: Augusthinose Block</p>
                 <p>Floor:Ground Floor</p>
-                
+
             </div>
         </div>
     </div>
@@ -114,7 +133,7 @@
                 <p>Room No: A4</p>
                 <p>Block: Augusthinose Block</p>
                 <p>Floor: Ground Floor</p>
-                
+
             </div>
         </div>
     </div>
@@ -128,7 +147,7 @@
                 <p>Room No: A5</p>
                 <p>Block: Augusthinose Block</p>
                 <p>Floor: Ground Floor</p>
-                
+
             </div>
         </div>
     </div>
@@ -154,7 +173,7 @@
                 <p>Room No: A8</p>
                 <p>Block: Augusthinose Block</p>
                 <p>Floor: Ground Floor</p>
-                
+
             </div>
         </div>
     </div>
@@ -162,6 +181,18 @@
     <footer>
         <p>&copy; Mar Augusthinose College Rampuram, Developed by IEDC MAC</p>
     </footer>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

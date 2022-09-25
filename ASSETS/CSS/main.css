@@ -1,57 +1,52 @@
-.header
-{
-    background-color: #fff;
+
+
+
+
+.header {
+    background-color: #EDF3F1;
     width: 100%;
     height: 100px;
-    margin:0;
-    padding: 0;
-
+    margin-top: auto;
 }
 
-.motto h1
-{
+.motto h1 {
     font-size: 60px;
     font-weight: 700;
-    color: #c2c3c4;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #b5b2b2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.motto h2
-{
-    font-size: 24px;
-    color: #c2c3c4;
-    font-family: Arial, Helvetica, sans-serif;
+.motto h2 {
+    font-size: 28px;
+    color: #b5b2b2;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 20px;
     text-align: right;
 }
 
-.mottodiv
-{
+.mottodiv {
     text-align: center;
     position: absolute;
-    margin-left: 19%;  
-    margin-top: 18%;
+    margin-left: 19%;
+    margin-top: 19%;
 }
 
-.header h1
-{
+.header h1 {
     text-align: center;
     font-size: 32px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2%;
-    font-weight: 100;
-}
-
-.header h2
-{
-    text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0%;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
 }
-.header img
-{
+
+.header h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    margin-top: -11px;
+}
+
+.header img {
     height: 100px;
     float: left;
 }
@@ -61,6 +56,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .slowFade {
     display: flex;
     align-items: flex-start;
@@ -71,48 +67,56 @@
     height: 503px;
     width: 100%;
 }
+
 .slowFade .slide img {
     width: 100%;
     height: 100%;
-    filter: brightness(40%);
+    filter: brightness(35%);
     position: absolute;
     object-fit: cover;
     /* min-width: 100%; */
     /* min-height: 100%; */
     background: #000;
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     opacity: 0;
     transform: scale(1.5) rotate(15deg);
     -webkit-animation: slowFade 32s infinite;
-            animation: slowFade 32s infinite;
+    animation: slowFade 32s infinite;
 }
+
 .slowFade .slide:nth-child(3) img {
     -webkit-animation-delay: 8s;
-            animation-delay: 8s;
+    animation-delay: 8s;
 }
+
 .slowFade .slide:nth-child(2) img {
     -webkit-animation-delay: 16s;
-            animation-delay: 16s;
+    animation-delay: 16s;
 }
+
 .slowFade .slide:nth-child(1) img {
     -webkit-animation-delay: 24s;
-            animation-delay: 24s;
+    animation-delay: 24s;
 }
+
 @keyframes slowFade {
     25% {
         opacity: 1;
         transform: scale(1) rotate(0);
     }
+
     40% {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes slowFade {
     25% {
         opacity: 1;
         transform: scale(1) rotate(0);
     }
+
     40% {
         opacity: 0;
     }
@@ -199,7 +203,12 @@ footer {
     text-align: center;
     width: 100%;
     padding: 2% 2% 2% 2%;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.sage {
+    text-decoration: none;
+    color: black;
 }
 
 .container {
@@ -234,110 +243,115 @@ footer {
     .container {
         margin-bottom: 30%;
     }
+
     .box-down {
         position: static;
         top: 0px;
         margin-bottom: 15%;
     }
-    .header h1
-    {
+
+    .header h1 {
         font-size: 24px;
     }
-    .header h2
-    {
+
+    .header h2 {
         font-size: 14px;
     }
-    .header img
-    {
+
+    .header img {
         height: 80px;
     }
-    .slowFade
-    {
+
+    .slowFade {
         height: 384px;
     }
-    .motto h1
-    {
+
+    .motto h1 {
         font-size: 39px;
     }
-    .motto h2
-    {
+
+    .motto h2 {
         font-size: 18px;
     }
-    .header
-    {
+
+    .header {
         margin-top: 18px;
         height: 80px;
     }
 }
 
-@media (max-width: 950px) and (min-width: 450px)
-{
-    .header h1
-    {
+@media (max-width: 950px) and (min-width: 450px) {
+    .header h1 {
         font-size: 30px;
     }
-    .header h2
-    {
+
+    .header h2 {
         font-size: 16px;
     }
-    .header img
-    {
+
+    .header img {
         height: 72px;
     }
-    .slowFade
-    {
+
+    .slowFade {
         height: 410px;
     }
-    .motto h1
-    {
+
+    .motto h1 {
         font-size: 46px;
     }
-    .motto h2
-    {
+
+    .motto h2 {
         font-size: 20px;
     }
-    .header
-    {
+
+    .header {
         margin-top: 14px;
         height: 94px;
     }
+
+    footer {
+        font-size: 11px;
+    }
 }
 
-@media (max-width: 450px)
-{
-    .header h1
-    {
-        font-size: 12px;
+@media (max-width: 450px) {
+    .header h1 {
+        font-size: 13px;
     }
-    .header h2
-    {
-        font-size: 8px;
-    }
-    .header img
-    {
-        height: 46px;
-    }
-    .slowFade
-    {
-        height: 248px;
-    }
-    .motto h1
-    {
-        font-size: 22px;
-    }
-    .motto h2
-    {
+
+    .header h2 {
         font-size: 10px;
     }
-    .header
-    {
+
+    .header img {
+        height: 46px;
+    }
+
+    .slowFade {
+        height: 248px;
+    }
+
+    .motto h1 {
+        font-size: 22px;
+    }
+
+    .motto h2 {
+        font-size: 10px;
+    }
+
+    .header {
         margin-top: 12px;
         height: 62px;
     }
-    .mottodiv
-    {
-        margin-left: 12%;
+
+    .mottodiv {
+        margin-left: 19%;
         margin-top: 26%;
+    }
+
+    footer {
+        font-size: 13px;
     }
 }
 
@@ -377,18 +391,23 @@ footer {
 .outer a:hover .red {
     filter: drop-shadow(2px 2px 5px var(--red));
 }
+
 .outer a:hover .blue {
     filter: drop-shadow(2px 2px 5px var(--blue));
 }
+
 .outer a:hover .orange {
     filter: drop-shadow(2px 2px 5px var(--orange));
 }
+
 .outer a:hover .green {
     filter: drop-shadow(2px 2px 5px var(--green));
 }
+
 .outer a:hover .black {
     filter: drop-shadow(2px 2px 5px var(--black));
 }
+
 .box-down {
     position: relative;
     top: 50px;
