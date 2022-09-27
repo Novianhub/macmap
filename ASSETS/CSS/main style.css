@@ -157,6 +157,13 @@ footer {
     bottom: 0px;
     text-align: center;
     width: 100%;
+    padding: 2% 2% 2% 2%;
+    font-size: 15px;
+}
+
+.sage {
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 950px) {
@@ -198,7 +205,7 @@ footer {
         filter: drop-shadow(2px 2px 5px rgb(0, 255, 89));
     }
 
-    .purple a:hover{
+    .purple a:hover {
         filter: drop-shadow(2px 2px 5px rgb(255, 0, 255));
     }
 
